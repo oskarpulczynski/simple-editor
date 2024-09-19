@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/src/index.css">
 </head>
-<body>
-<main>
-  <h1></h1>
-  <p>
-    i
-  </p>
-</main>
+
+<body class="bg-slate-200 dark:bg-gray-900 h-lvh w-lvw flex justify-center">
+  <main class="flex justify-center flex-col gap-4 m-8 flex-grow max-w-screen-md">
+      <label for="message" class="block mb-2 text-3xl font-medium text-gray-900 dark:text-white">My Editor</label>
+      <textarea id="message" rows="10"
+        class="my_editor--js block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-30 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+        placeholder="Napisz wiadomość..."></textarea>
+
+      <div class="flex justify-end gap-4 flex-wrap">
+        <button type="button"
+          class="button__load--js text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Wczytaj</button>
+        <button type="button"
+          class="button__save--js text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Zapisz</button>
+      </div>
+  </main>
+  <script src="main.js"></script>
 </body>
+
 </html>
