@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple editor</title>
   <link rel="stylesheet" href="/src/index.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body class="bg-slate-300 dark:bg-gray-900 h-lvh w-lvw flex justify-center">
@@ -17,9 +18,12 @@
 
     <div class="flex justify-end gap-4 flex-wrap">
       <button type="button"
+        class="button__check--js text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Sprawdź</button>
+      <button type="button"
         class="button__load--js text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Wczytaj</button>
       <button type="button"
         class="button__save--js text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Zapisz</button>
+
     </div>
   </main>
   <script src="main.js"></script>
