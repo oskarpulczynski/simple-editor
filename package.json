@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "parcel src/index.html"
+		"start": "parcel src/index.html --public-url=https://baldshroom-se2.netlify.app"
 	},
 	"keywords": [],
 	"author": "",
